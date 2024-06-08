@@ -1,0 +1,8 @@
+**/.env.bac
+**/.devcontainer
+**/.github
+**/.pytest_cache
+**/__pycache__/
+**/*.pyc
+**/.dockerignore
+Dockerfile-dev

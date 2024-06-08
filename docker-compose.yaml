@@ -1,0 +1,22 @@
+services:
+  my-python-app:
+    container_name: my-fastapi-app
+    image: whaleman0423/fastapi-with-account-management:latest
+    ports:
+      - "5000:8000"
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    depends_on:
+      - dynamodb-emulator
+    volumes:
+      - .:/app
+
+  dynamodb-emulator:
+    container_name: local-dynamodb
+    image: amazon/dynamodb-local:2.5.0
+    ports:
+      - "8000:8000"
+    stdin_open: true
+    tty: true
