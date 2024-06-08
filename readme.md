@@ -146,7 +146,7 @@ Body - raw json
 ```
 {
     "username": "Test_account_123",
-    "password": "test_password"
+    "password": "Test_password_123"
 }
 ```
 
@@ -164,7 +164,7 @@ Body - raw json
 ```
 {
     "username": "Test_account_123",
-    "password": "test_password"
+    "password": "Test_password_123"
 }
 ```
 
