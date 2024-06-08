@@ -187,14 +187,14 @@ pytest
 在啟動 fastapi 系統的前提下，訪問 http://localhost:5000/  
 開啟前端網頁後，可以在「創建帳戶區」與「驗證密碼區」分別的輸入框輸入 username 與 password 並點擊按鈕驗證，測試情境參考以下:  
 1. 創建帳號:  
-a. 不正常 username - username: 1a，password: 1a2b3c4d  
-b. 不正常 username - username: 1a2b3c4d，password: 1a2b3c4d  
+a. 不正常 username - username: 1a，password: 1a2b3c4D  
+b. 不正常 username - username: 1a2b3c4d，password: 1a2b3c4D  
 c. 不正常 password - username: 1a2b3c4D，password: 1a  
 d. 皆不正常 - username: 1a，password: 1a  
-c. 正常 - username: 1a2b3c4D，password: 1a2b3c4d
+c. 正常 - username: 1a2b3c4D，password: 1a2b3c4D
 
 2. 驗證密碼  
-a. 正常 - username: 1a2b3c4D，password: 1a2b3c4d  
+a. 正常 - username: 1a2b3c4D，password: 1a2b3c4D  
 b. 異常訪問超過 5 次 - username: 1a2b3c4D，password: 1a2b3c4dzzz
 
 #### 觀察 OpenAPI Spec Docs
